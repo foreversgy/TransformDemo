@@ -15,6 +15,7 @@
 		199F15EF1B60F63B00D53736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199F15ED1B60F63B00D53736 /* LaunchScreen.storyboard */; };
 		199F15FA1B60F63B00D53736 /* TransformDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 199F15F91B60F63B00D53736 /* TransformDemoTests.m */; };
 		199F16051B60F63B00D53736 /* TransformDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 199F16041B60F63B00D53736 /* TransformDemoUITests.m */; };
+		199F16131B60F87A00D53736 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199F16121B60F87A00D53736 /* bg2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		199F16001B60F63B00D53736 /* TransformDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		199F16041B60F63B00D53736 /* TransformDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformDemoUITests.m; sourceTree = "<group>"; };
 		199F16061B60F63B00D53736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199F16121B60F87A00D53736 /* bg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		199F15DE1B60F63B00D53736 /* TransformDemo */ = {
 			isa = PBXGroup;
 			children = (
+				199F16121B60F87A00D53736 /* bg2.jpg */,
 				199F15E21B60F63B00D53736 /* AppDelegate.h */,
 				199F15E31B60F63B00D53736 /* AppDelegate.m */,
 				199F15E51B60F63B00D53736 /* ViewController.h */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				199F15EF1B60F63B00D53736 /* LaunchScreen.storyboard in Resources */,
+				199F16131B60F87A00D53736 /* bg2.jpg in Resources */,
 				199F15EC1B60F63B00D53736 /* Assets.xcassets in Resources */,
 				199F15EA1B60F63B00D53736 /* Main.storyboard in Resources */,
 			);
@@ -414,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransformDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.share.deom.TransformDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransformDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.share.deom.TransformDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +504,7 @@
 				199F160B1B60F63B00D53736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		199F160C1B60F63B00D53736 /* Build configuration list for PBXNativeTarget "TransformDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				199F160E1B60F63B00D53736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		199F160F1B60F63B00D53736 /* Build configuration list for PBXNativeTarget "TransformDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				199F16111B60F63B00D53736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
