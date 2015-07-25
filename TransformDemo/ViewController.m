@@ -39,7 +39,6 @@
     imageView.layer.cornerRadius=10;
     imageView.layer.masksToBounds=YES;
     imageView.image=[UIImage imageNamed:@"bg2.jpg"];
-//    imageView.layer.anchorPoint=CGPointMake(0.5, 1);
     CAShapeLayer *shapeLayer=[CAShapeLayer layer];
     
     shapeLayer.path=[UIBezierPath bezierPathWithRect:CGRectMake(0, 0, imageView.bounds.size.width, imageView.bounds.size.height/2)].CGPath;
@@ -129,6 +128,7 @@
             
             basi.removedOnCompletion=NO;
             basi.fillMode=kCAFillModeForwards;
+//            basi.delegate=self;
             [imageView.layer addAnimation:basi forKey:@"dd"];
             
         }
@@ -140,9 +140,10 @@
         basi.duration=0.5;
         basi.fromValue=[NSValue valueWithCATransform3D:layer.transform];
         basi.toValue=[NSValue valueWithCATransform3D:CATransform3DMakeRotation(0, 1, 0, 0)];
-        
+        basi.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         basi.removedOnCompletion=NO;
         basi.fillMode=kCAFillModeForwards;
+        basi.delegate=self;
         [imageView.layer addAnimation:basi forKey:@"dd"];
         
     }
@@ -154,8 +155,26 @@
     
 }
 
+- (void)animationDidStart:(CAAnimation *)anim;
+{
+
+    
+    
+    
 
 
+}
+
+-(void)animationDidStop:(nonnull CAAnimation *)anim finished:(BOOL)flag
+{
+    
+    if (flag ) {
+        
+        
+//        bottomView.image=imageView.image;
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
